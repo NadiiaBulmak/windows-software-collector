@@ -1,0 +1,22 @@
+{
+  "name": "windows-collector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "build": "tsc && pkg . --targets node18-win-x64 --output collector.exe",
+    "start": "npx tsx index.ts"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "pkg": "^5.8.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
